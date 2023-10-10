@@ -1,0 +1,187 @@
+.body-accredit{
+    display: flex;
+}
+/* Tela de Login e Cadastro*/
+/*Fazer a troca do login pro cadastro*/
+.left-section, .right-section {
+    display: flex;
+    background-color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: calc(50% - 40px);
+    height: 540px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.right-section {
+    justify-content: center;
+    align-items: center;
+}
+.left-section{
+    z-index: 5;
+}
+
+button {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+button:hover {
+    background-color: #357ae8;
+}
+
+
+
+/*Estilizando o texto de esqueceu a senha?*/
+.esqueci{
+    width: 100%;
+    text-align: end;
+    font-size: 0.6rem;
+}
+/*Estilizando o botão de entrar*/
+.enter{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.register{
+    display: none;
+}
+.register-form{
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input-group{
+    position: relative;
+}
+input{
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    border-color: 1px #333;
+    margin:5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font: inherit;
+    outline: 1px solid #020202;
+    color: #000;
+    border: none;
+    background-color: transparent;
+    transition: outline-color 500ms;
+
+}
+.input-group_input{
+    width: calc(100% - 10px);
+}
+.input-group_input:is(:focus, :valid){
+    outline-color: #3c50eb;
+}
+.input-group_label{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    translate: 10px 10px;
+    color: #000;
+    transition: translate 500ms scale 500ms;
+}
+.login-password, .tel-cpf-date-of-birth{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.login, .password{
+    width: 100%;
+}
+.tel-cpf{
+    width: 65%;
+    display: flex;
+}
+.tel, .cpf{
+    width: 50%;
+}
+.date-of-birth{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 35%;
+    color: #000;
+}
+.input-date-of-birth{
+    width: calc(100% - 10px);
+}
+.input-label_date-of-birth{
+    width: calc(100% - 10px);
+    position: absolute;
+    padding-inline: 5px;
+    translate: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    top: -18px;
+    left: 0;
+    translate: 10px 10px;
+    color: #000;
+}
+
+.input-group_input:focus+.input-group_label, .input-group_input:valid+.input-group_label{
+    top: 0px;
+    padding-inline: 5px;
+    translate: 10px;
+    scale: 0.8;
+    background-color: #fff;
+}
+.first-name-last-name{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.first-name, .last-name{
+    width:50%;
+}
+.city-stace-cep, .street-number-city-district{
+    width: 100%;
+    display: flex;
+}
+.street{
+    width: 60%;
+}
+.number-house, .district{
+    width: 20%;
+}
+.city, .state, .cep{
+    width: 34%;
+}
+
+
+
+/* Estilizando o campo de entrada de data */
+input[type="date"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  /* Personalizando as cores dos elementos de data */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #f2f2f2;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+  
+  /* Personalizando a seta de rolagem (apenas no Chrome) */
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
